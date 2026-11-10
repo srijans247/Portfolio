@@ -429,6 +429,30 @@
       </div>
     </div>
 
+    <div class="ask" id="ask">
+      <section class="ask-panel" id="askPanel" hidden aria-labelledby="askTitle">
+        <header class="ask-head">
+          <div>
+            <p class="ask-kicker">Portfolio assistant</p>
+            <h2 id="askTitle">Ask about Srijan</h2>
+          </div>
+          <button class="ask-close" id="askClose" type="button" aria-label="Close chat">×</button>
+        </header>
+        <div class="ask-log" id="askLog" role="log" aria-live="polite" aria-relevant="additions"></div>
+        <div class="ask-suggestions" id="askSuggestions"></div>
+        <form class="ask-form" id="askForm">
+          <label class="sr" for="askInput">Your question</label>
+          <input id="askInput" type="text" maxlength="400" placeholder="Experience, projects, skills, contact…" autocomplete="off" />
+          <button class="btn primary" type="submit">Send</button>
+        </form>
+        <p class="ask-note">Answers use only the public details on this page. Nothing is sent to a server.</p>
+      </section>
+      <button class="ask-launch" id="askLaunch" type="button" aria-expanded="false" aria-controls="askPanel">
+        <span class="ask-mark" aria-hidden="true">SS</span>
+        Ask about Srijan
+      </button>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
